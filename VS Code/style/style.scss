@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';  
+}
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+.header{
+    background-image: url(../img/background_header.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 1833.52px;
+    height: 966.31px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.header__greeting{
+    max-width: 768px;
+    min-height: 156px;
+    color: rgba(32, 32, 39, 1);
+    font-family: Montserrat;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-bottom: 24px;
+}
+.header__invitation{
+    max-width: 720px;
+    min-height: 64px;
+    color: rgba(32, 32, 39, 1);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+}
