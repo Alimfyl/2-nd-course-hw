@@ -114,7 +114,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 24;
+  gap: 24px;
 }
 
 .about__heading {
@@ -125,6 +125,7 @@
   line-height: 78px;
   letter-spacing: 0px;
   text-align: left;
+  margin-top: 94px;
 }
 
 .about__text {
@@ -141,25 +142,26 @@
 
 .game-box {
   display: flex;
-  gap: 32px;
   justify-content: flex-start;
   align-items: center;
 }
 
 .game-box_about {
   min-width: 1201px;
-  max-height: 1056px;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
 .game {
-  width: 314px;
-  height: 91px;
+  width: 378px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   gap: 10px;
   padding: 32px 32px 36px 32px;
+}
+
+.game__img {
+  max-width: 378px;
 }/*# sourceMappingURL=style.css.map */
