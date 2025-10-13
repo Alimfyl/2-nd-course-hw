@@ -72,7 +72,7 @@
     align-items: flex-start;
     gap: 51px;
     padding: 27px 49px 27px 49px;
-    overflow: auto;
+    overflow: hidden;
     white-space: nowrap;
 }
 .menu__game{
@@ -95,7 +95,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 72px;
+    
 }.about{
     display: flex;
     flex-direction: column;
@@ -123,11 +123,12 @@
     line-height: 32px;
     letter-spacing: 0px;
     text-align: left;
+    padding-bottom: 72px;
 }
 .game-box{
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     gap: 32px;
 }
 .game-box_about{
@@ -135,7 +136,11 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
+.game-box_about-end{
+    align-items: flex-end;
+}
 .game{
+    text-decoration: none;
     flex: 1 1 calc(33.333% - 32px);
     display: flex;
     flex-direction: column;
@@ -157,4 +162,50 @@
     align-items: flex-start;
     gap: 10px;
     padding: 32px 32px 36px 32px;
+}
+.game__text{
+    color: rgba(32, 32, 39, 1);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: 0px;
+    text-align: left;
+    padding: 8px 16px 10px 16px;
+    border-radius: 52.58px;
+    background: rgba(247, 247, 247, 1);
+}
+.game__name{
+    color: rgba(32, 32, 39, 1);
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.mini-game{
+    margin-top: 96px;
+}
+.mini-game__text{
+    color: rgba(255, 255, 255, 1);
+    font-family: Montserrat;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-bottom: 72px;
+}
+.game-box_play{
+        flex-direction: column;
+}
+.game-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.game-card-revers{
+    flex-direction: row-reverse;
 }
