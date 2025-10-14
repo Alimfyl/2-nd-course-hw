@@ -217,7 +217,7 @@
     height: 500px;
 }
 .game-card__description{
-    width: 601px;
+    max-width: 504px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
