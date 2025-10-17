@@ -231,7 +231,6 @@
     line-height: 59px;
 }
 .game-card__text{
-    max-width: 457px;
     padding-top: 24px;
     padding-bottom: 36px;
     font-size: 24px;
@@ -248,4 +247,20 @@
     padding: 16px 28px 16px 28px;
     border-radius: 60px;
     background: rgba(32, 32, 39, 1);
+}
+.footer{
+    min-width: 1441px;
+    height: 150px;
+    background: rgba(189, 237, 53, 1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.footer__def{
+    color: rgba(0, 0, 0, 1);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
 }
