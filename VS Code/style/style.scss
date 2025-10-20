@@ -8,7 +8,7 @@
     padding-right: calc(50% - 600px);
 }
 .header{
-    background-image: url(../img/background_header.png);
+    background-image: url(../img/background_header.svg);
     background-repeat:no-repeat;
     background-size: cover;
     background-position: center;
@@ -37,7 +37,6 @@
     color: rgba(32, 32, 39, 1);
     font-family: Montserrat;
     font-size: 24px;
-    font-weight: 700;
     line-height: 32px;
     letter-spacing: 0px;
     text-align: left;
@@ -84,7 +83,7 @@
     text-transform: uppercase;
 }
 .background{
-    background-image: url(../img/background.png);
+    background-image: url(../img/background.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -138,6 +137,7 @@
     align-items: flex-end;
 }
 .game{
+    max-width: 378px;
     text-decoration: none;
     flex: 1 1 calc(33.333% - 32px);
     display: flex;
