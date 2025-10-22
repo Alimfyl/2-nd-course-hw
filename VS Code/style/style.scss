@@ -58,6 +58,11 @@
     letter-spacing: 0%;
     text-align: center;
 }
+.header__play-button:hover{
+    background: rgba(255, 255, 255, 1);
+    color: rgba(32, 32, 39, 1);
+    cursor: pointer;
+}
 .menu{
     box-sizing: border-box;
     border: 1px solid rgba(255, 255, 255, 0.2);
