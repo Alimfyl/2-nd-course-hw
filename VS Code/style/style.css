@@ -63,6 +63,12 @@
   text-align: center;
 }
 
+.header__play-button:hover {
+  background: rgb(255, 255, 255);
+  color: rgb(32, 32, 39);
+  cursor: pointer;
+}
+
 .menu {
   box-sizing: border-box;
   border: 1px solid rgba(255, 255, 255, 0.2);
