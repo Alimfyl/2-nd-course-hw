@@ -10,9 +10,9 @@
 }
 
 .header {
-  background-image: url(../img/background_header.svg);
+  background-image: url("../img/background_header.svg#svgView(preserveAspectRatio(none))");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   background-position: center;
   max-width: 1833.52px;
   height: 966.31px;
