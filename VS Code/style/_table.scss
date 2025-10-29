@@ -1,3 +1,58 @@
 @media(max-width: 1200px){
-    
+.game-box_about{
+    max-width: 1201px;
+    min-width: 377px;
+}
+.game-box_about-end {
+    padding-top: 32px;
+}
+.game-card{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.game-box{
+    justify-content: center;
+    align-items: center;
+}
+}
+@media(max-width: 600px){
+   .game-card{
+    width: 343px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    &__img{
+        width: 343px;
+        height: 284.93px;
+    }
+    &__description{
+        width: 284.93px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 29.04px 29.04px 32.67px 29.04px;
+    }
+    &__name{
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+    }
+    &__text{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+    &__link{
+        width: 100%;
+    }
+    &__play{
+        width: 100%;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 141.69%;
+    }
+}
+
 }
