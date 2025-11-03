@@ -3,6 +3,7 @@
         width: 377px;
         height: 700px;
         align-items: center;
+        
        &__greeting{
         font-size: 40px;
         font-weight: 700;
@@ -49,6 +50,9 @@
 .background{
     padding-bottom: 9.88px;
     width: 377px;
+}
+.background__star_1_box{
+    display: none;
 }
 .about-box{
     display: none;

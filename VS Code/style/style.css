@@ -37,13 +37,17 @@
 }
 
 .header__star_3_box {
-  z-index: 1;
+  z-index: 0;
   position: absolute;
   right: 0;
   top: 0;
   overflow: hidden;
   width: 586px;
   height: 710px;
+}
+
+.header__star_3_mob {
+  display: none;
 }
 
 .header__star_3 {
@@ -70,6 +74,7 @@
 }
 
 .header__greeting {
+  z-index: 1;
   max-width: 768px;
   min-height: 156px;
   color: rgb(32, 32, 39);
@@ -83,6 +88,7 @@
 }
 
 .header__invitation {
+  z-index: 1;
   max-width: 720px;
   min-height: 64px;
   color: rgb(32, 32, 39);
@@ -95,6 +101,7 @@
 }
 
 .header__play-button {
+  z-index: 1;
   width: 247px;
   height: 66px;
   box-sizing: border-box;
@@ -464,6 +471,9 @@
     padding-bottom: 9.88px;
     width: 377px;
   }
+  .background__star_1_box {
+    display: none;
+  }
   .about-box {
     display: none;
   }
@@ -521,6 +531,12 @@
   }
 }
 @media (max-width: 1200px) {
+  .header__star_3_mob {
+    display: block;
+  }
+  .header__star_3 {
+    display: none;
+  }
   .about-box {
     display: none;
   }
