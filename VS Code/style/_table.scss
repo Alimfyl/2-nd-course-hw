@@ -1,10 +1,6 @@
 @media(max-width: 1200px){
-.game-box_about{
-    max-width: 1201px;
-    min-width: 377px;
-}
-.game-box_about-end {
-    padding-top: 32px;
+.about-box{
+    display: none;
 }
 .game-card{
     flex-direction: column;
