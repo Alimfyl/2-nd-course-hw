@@ -1,4 +1,11 @@
 @media(max-width: 377px){
+    .center{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .header__star_3_box{
+    right: auto;
+}
     .header{
         width: 377px;
         height: 700px;
@@ -27,6 +34,30 @@
             gap: 10px;
             padding: 16px 28px 16px 28px;
         }
+}
+.header__star_1{
+    width: 35px;
+    height: 35px;
+    left: 38px;
+    top: 97px;
+}
+.header__star_2{
+    width: 21px;
+    height: 21px;
+    left: 92px;
+    top: 64px;
+}
+.header__star_4{
+    width: 18px;
+    height: 18px;
+    right: 84px;
+    top: 557px;
+}
+.header__star_5{
+    width: 39px;
+    height: 41px;
+    right: 34px;
+    top: 580px;
 }
 .menu{
     gap: 27.4px;

@@ -1,10 +1,35 @@
 @media(max-width: 1200px){
+.center {
+    padding-left: calc(50% - 786px/2);
+    padding-right: calc(50% - 786px/2);
+}
+.header__star_3_box{
+    width: 189px;
+    height: 135.39px;
+}
+
 .header__star_3_mob{
     display: block;
+    position: absolute;
+    top: -120px;
+    object-position: left bottom;
 }
 .header__star_3{
     display: none;
 }
+.header__star_4 {
+    position: absolute;
+    right: 110px;
+    top: 830px;
+}
+.header__star_5 {
+    position: absolute;
+    right: 34px;
+    top: 870px;
+}
+.background__star_box {
+        display: none;
+    }
 .about-box{
     display: none;
 }
@@ -20,6 +45,8 @@
 }
 }
 @media(max-width: 600px){
+    
+    
    .game-card{
     width: 343px;
     flex-direction: column;
