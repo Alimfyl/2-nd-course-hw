@@ -7,13 +7,18 @@
 </head>
 <body>
     <script>
-        let c = 1
-        while (c < 6) {
-            console.log(c)
-            c++
+           function even (a) {
+             if ( a  % 2 == 0){
+                return 'Число чётное'
+             }
+             
+            else  {
+                return 'Число нечётное'
+            }
         }
-        
-       
+        let a = prompt ("Введите число")
+        let result = even(a);
+        console.log(result);
     </script>
 </body>
 </html>
