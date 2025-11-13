@@ -7,7 +7,7 @@
 </head>
 <body>
     <script>
-        function hi (age) {
+        function hi (age = prompt("Сколько Вам лет?")) {
             
             if ( age < 0 ) {
                 alert ("Вы ввели неправильное значение")
@@ -19,8 +19,7 @@
                 alert ("Добро пожаловать!")
             }
         }
-        let age = prompt("Сколько Вам лет?")
-        hi (age)
+        hi (age = prompt("Сколько Вам лет?"))
         </script>
 </body>
 </html>
