@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +7,20 @@
 </head>
 <body>
     <script>
-        let obj = {
-            "Коля" : '200',
-            "Вася" : '300',
-            "Петя" : '400',
+        function hi (age) {
+            
+            if ( age < 0 ) {
+                alert ("Вы ввели неправильное значение")
+            }
+            else if (age > 0 && age < 12 ) {
+                alert ("Привет, друг!")
+            }
+            else {
+                alert ("Добро пожаловать!")
+            }
         }
-        for (let key in obj) {
-   console.log(`${key} — зарплата ${obj[key]} долларов.`);
-}
+        let age = prompt("Сколько Вам лет?")
+        hi (age)
         </script>
 </body>
 </html>
