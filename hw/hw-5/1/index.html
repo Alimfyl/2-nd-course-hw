@@ -8,11 +8,17 @@
 <body>
     
     <script >
-        let i = 0
-        while (i < 2){
-            console.log("Привет")
-            i++
+        function less (a, b) {
+             if ( a > b){
+                return b
+             }
+             
+            else  {
+                return a
+            }
         }
+        let result = less(8, 8);
+        console.log(result);
     </script>
 </body>
 </html>
