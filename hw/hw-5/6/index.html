@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      function cubeNum (a = prompt("Введите число")) {
+            if (  isNaN(a) ) {
+                alert ("Переданный параметр не является числом")
+            }
+            else {
+              const cube = a * a * a;
+                return console.log(`${a} в кубе равняется ${cube}`)
+            }
+        }
+        cubeNum (a = prompt("Введите число"))
+        
+    </script>
+</body>
+</html>
