@@ -12,7 +12,7 @@
 .header {
   background: rgb(225, 255, 143);
   max-width: 1833.52px;
-  height: 966.31px;
+  height: 710px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -504,6 +504,11 @@
     line-height: 141.69%;
   }
 }
+@media (max-width: 600px) and (max-width: 416px) {
+  .header__greeting {
+    font-size: 64px;
+  }
+}
 @media (max-width: 377px) {
   .center {
     padding-left: 16px;
@@ -567,7 +572,7 @@
   .menu {
     gap: 27.4px;
     padding: 16px 24px 16px 24px;
-    width: 375px;
+    width: 409px;
     height: 51.34px;
   }
   .menu__game {
@@ -594,7 +599,7 @@
   }
   .mini-game {
     padding-top: 48px;
-    padding-bottom: 48px;
+    padding-bottom: 9.88px;
   }
   .mini-game__text {
     font-size: 40px;
@@ -641,7 +646,11 @@
     line-height: 141.69%;
   }
   .footer {
-    min-width: 375px;
+    width: 410px;
     height: 100px;
+  }
+  .footer__def {
+    font-size: 16px;
+    font-weight: 600;
   }
 }/*# sourceMappingURL=style.css.map */

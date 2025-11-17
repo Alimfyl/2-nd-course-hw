@@ -83,5 +83,10 @@
         line-height: 141.69%;
     }
 }
+@media (max-width: 416px){
+    .header__greeting {
+        font-size: 64px;
+    }
+}
 
 }

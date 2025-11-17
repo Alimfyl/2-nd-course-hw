@@ -62,7 +62,7 @@
 .menu{
     gap: 27.4px;
     padding: 16px 24px 16px 24px;
-    width: 375px;
+    width: 409px;
     height: 51.34px;
     &__game{
        
@@ -90,7 +90,7 @@
 }
 .mini-game{
     padding-top: 48px;
-    padding-bottom: 48px;
+    padding-bottom: 9.88px;
     &__text{
         font-size: 40px;
         font-weight: 700;
@@ -138,8 +138,12 @@
 }
 
 .footer{
-    min-width: 375px;
+    width: 410px;
     height: 100px;
+    &__def{
+        font-size: 16px;
+        font-weight: 600;
+    }
    
 }
 }
