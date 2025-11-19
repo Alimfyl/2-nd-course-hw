@@ -12,7 +12,7 @@
 .header {
   background: rgb(225, 255, 143);
   max-width: 1833.52px;
-  height: 966.31px;
+  height: 710px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -421,177 +421,36 @@
   line-height: 29px;
 }
 
-@media (max-width: 377px) {
-  .center {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-  .header__star_3_box {
-    right: auto;
-  }
-  .header {
-    width: 377px;
-    height: 700px;
-    align-items: center;
-  }
-  .header__greeting {
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 49px;
-    text-align: center;
-  }
-  .header__invitation {
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0px;
-    text-align: center;
-  }
-  .header__play-button {
-    width: 285px;
-    height: 55px;
-    font-size: 16px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding: 16px 28px 16px 28px;
-  }
-  .header__star_1 {
-    width: 35px;
-    height: 35px;
-    left: 38px;
-    top: 97px;
-  }
-  .header__star_2 {
-    width: 21px;
-    height: 21px;
-    left: 92px;
-    top: 64px;
-  }
-  .header__star_4 {
-    width: 18px;
-    height: 18px;
-    right: 84px;
-    top: 557px;
-  }
-  .header__star_5 {
-    width: 39px;
-    height: 41px;
-    right: 34px;
-    top: 580px;
-  }
-  .menu {
-    gap: 27.4px;
-    padding: 16px 24px 16px 24px;
-    width: 375px;
-    height: 51.34px;
-  }
-  .menu__game {
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 110%;
-    letter-spacing: 4%;
-    text-align: left;
-    text-transform: uppercase;
-  }
-  .menu__img {
-    width: 19.34px;
-    height: 19.34px;
-  }
-  .background {
-    padding-bottom: 9.88px;
-    width: 377px;
-  }
-  .background__star_1_box {
-    display: none;
-  }
-  .about-box {
-    display: none;
-  }
-  .mini-game {
-    padding-top: 48px;
-    padding-bottom: 48px;
-  }
-  .mini-game__text {
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 49px;
-  }
-  .game-box_play {
-    align-items: center;
-  }
-  .game-card {
-    width: 343px;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-  .game-card__img {
-    width: 343px;
-    height: 284.93px;
-  }
-  .game-card__description {
-    width: 284.93px;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 29.04px 29.04px 32.67px 29.04px;
-  }
-  .game-card__name {
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 39px;
-  }
-  .game-card__text {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-  }
-  .game-card__link {
-    width: 100%;
-  }
-  .game-card__play {
-    width: 100%;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 141.69%;
-  }
-  .footer {
-    min-width: 375px;
-    height: 100px;
-  }
-}
 @media (max-width: 1200px) {
   .center {
     padding-left: calc(50% - 393px);
     padding-right: calc(50% - 393px);
   }
-  .header__star_3_box {
+  .header__star-3-box {
     width: 189px;
     height: 135.39px;
   }
-  .header__star_3_mob {
+  .header__star-3-mob {
     display: block;
     position: absolute;
     top: -120px;
     -o-object-position: left bottom;
        object-position: left bottom;
   }
-  .header__star_3 {
+  .header__star-3 {
     display: none;
   }
-  .header__star_4 {
+  .header__star-4 {
     position: absolute;
     right: 110px;
     top: 830px;
   }
-  .header__star_5 {
+  .header__star-5 {
     position: absolute;
     right: 34px;
     top: 870px;
   }
-  .background__star_box {
+  .background__star-box {
     display: none;
   }
   .about-box {
@@ -643,5 +502,155 @@
     font-size: 16px;
     font-weight: 600;
     line-height: 141.69%;
+  }
+}
+@media (max-width: 600px) and (max-width: 416px) {
+  .header__greeting {
+    font-size: 64px;
+  }
+}
+@media (max-width: 377px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header__star-3-box {
+    right: auto;
+  }
+  .header {
+    width: 377px;
+    height: 700px;
+    align-items: center;
+  }
+  .header__greeting {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+    text-align: center;
+  }
+  .header__invitation {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+  .header__play-button {
+    width: 285px;
+    height: 55px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 28px 16px 28px;
+  }
+  .header__star-1 {
+    width: 35px;
+    height: 35px;
+    left: 38px;
+    top: 97px;
+  }
+  .header__star-2 {
+    width: 21px;
+    height: 21px;
+    left: 92px;
+    top: 64px;
+  }
+  .header__star-4 {
+    width: 18px;
+    height: 18px;
+    right: 84px;
+    top: 557px;
+  }
+  .header__star-5 {
+    width: 39px;
+    height: 41px;
+    right: 34px;
+    top: 580px;
+  }
+  .menu {
+    gap: 27.4px;
+    padding: 16px 24px 16px 24px;
+    width: 409px;
+    height: 51.34px;
+  }
+  .menu__game {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: 4%;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  .menu__img {
+    width: 19.34px;
+    height: 19.34px;
+  }
+  .background {
+    padding-bottom: 9.88px;
+    width: 377px;
+  }
+  .background__star-1-box {
+    display: none;
+  }
+  .about-box {
+    display: none;
+  }
+  .mini-game {
+    padding-top: 48px;
+    padding-bottom: 9.88px;
+  }
+  .mini-game__text {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+  }
+  .game-box_play {
+    align-items: center;
+  }
+  .game-card {
+    width: 343px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .game-card__img {
+    width: 343px;
+    height: 284.93px;
+  }
+  .game-card__description {
+    width: 284.93px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 29.04px 29.04px 32.67px 29.04px;
+  }
+  .game-card__name {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+  }
+  .game-card__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  .game-card__link {
+    width: 100%;
+  }
+  .game-card__play {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 141.69%;
+  }
+  .footer {
+    width: 410px;
+    height: 100px;
+  }
+  .footer__def {
+    font-size: 16px;
+    font-weight: 600;
   }
 }/*# sourceMappingURL=style.css.map */

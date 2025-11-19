@@ -3,31 +3,31 @@
     padding-left: calc(50% - 786px/2);
     padding-right: calc(50% - 786px/2);
 }
-.header__star_3_box{
+.header__star-3-box{
     width: 189px;
     height: 135.39px;
 }
 
-.header__star_3_mob{
+.header__star-3-mob{
     display: block;
     position: absolute;
     top: -120px;
     object-position: left bottom;
 }
-.header__star_3{
+.header__star-3{
     display: none;
 }
-.header__star_4 {
+.header__star-4 {
     position: absolute;
     right: 110px;
     top: 830px;
 }
-.header__star_5 {
+.header__star-5 {
     position: absolute;
     right: 34px;
     top: 870px;
 }
-.background__star_box {
+.background__star-box {
         display: none;
     }
 .about-box{
@@ -81,6 +81,11 @@
         font-size: 16px;
         font-weight: 600;
         line-height: 141.69%;
+    }
+}
+@media (max-width: 416px){
+    .header__greeting {
+        font-size: 64px;
     }
 }
 

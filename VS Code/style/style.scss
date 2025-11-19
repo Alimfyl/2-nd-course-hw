@@ -10,7 +10,7 @@
 .header{
     background: rgba(225, 255, 143, 1);
     max-width: 1833.52px;
-    height: 966.31px;
+    height: 710px;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -365,5 +365,5 @@
     font-weight: 600;
     line-height: 29px;
 }
-@import "_mobile";
 @import "_table";
+@import "_mobile";

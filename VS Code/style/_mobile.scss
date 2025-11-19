@@ -3,7 +3,7 @@
         padding-left: 16px;
         padding-right: 16px;
     }
-    .header__star_3_box{
+    .header__star-3-box{
     right: auto;
 }
     .header{
@@ -35,25 +35,25 @@
             padding: 16px 28px 16px 28px;
         }
 }
-.header__star_1{
+.header__star-1{
     width: 35px;
     height: 35px;
     left: 38px;
     top: 97px;
 }
-.header__star_2{
+.header__star-2{
     width: 21px;
     height: 21px;
     left: 92px;
     top: 64px;
 }
-.header__star_4{
+.header__star-4{
     width: 18px;
     height: 18px;
     right: 84px;
     top: 557px;
 }
-.header__star_5{
+.header__star-5{
     width: 39px;
     height: 41px;
     right: 34px;
@@ -62,7 +62,7 @@
 .menu{
     gap: 27.4px;
     padding: 16px 24px 16px 24px;
-    width: 375px;
+    width: 409px;
     height: 51.34px;
     &__game{
        
@@ -82,7 +82,7 @@
     padding-bottom: 9.88px;
     width: 377px;
 }
-.background__star_1_box{
+.background__star-1-box{
     display: none;
 }
 .about-box{
@@ -90,7 +90,7 @@
 }
 .mini-game{
     padding-top: 48px;
-    padding-bottom: 48px;
+    padding-bottom: 9.88px;
     &__text{
         font-size: 40px;
         font-weight: 700;
@@ -138,8 +138,12 @@
 }
 
 .footer{
-    min-width: 375px;
+    width: 410px;
     height: 100px;
+    &__def{
+        font-size: 16px;
+        font-weight: 600;
+    }
    
 }
 }
