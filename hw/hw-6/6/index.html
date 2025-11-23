@@ -7,17 +7,10 @@
 </head>
 <body>
     <script>
-      function cubeNum (a = prompt("Введите число")) {
-            if (  isNaN(a) ) {
-                alert ("Переданный параметр не является числом")
-            }
-            else {
-              const cube = a * a * a;
-                return console.log(`${a} в кубе равняется ${cube}`)
-            }
-        }
-        cubeNum (a = prompt("Введите число"))
-        
+    const arr = [9, 8, 7, 'a', 6, 5];
+    arr.sort()
+    const filteredArr = arr.filter(item => typeof item === 'number');
+    console.log(filteredArr)
     </script>
 </body>
 </html>
