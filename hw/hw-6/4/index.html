@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function hi (age = prompt("Сколько Вам лет?")) {
+            
+            if ( age < 0 ) {
+                alert ("Вы ввели неправильное значение")
+            }
+            else if (age > 0 && age < 12 ) {
+                alert ("Привет, друг!")
+            }
+            else {
+                alert ("Добро пожаловать!")
+            }
+        }
+        hi ()
+        </script>
+</body>
+</html>

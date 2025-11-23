@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getArea() {
+            return Math.PI * this.radius ** 2;
+        }
+
+        function getPerimetr() {
+            return 2 * Math.PI * this.radius;
+        }
+
+      const circle1 = {
+        radius: 10,
+        methodGetArea: getArea,
+        methodGetPerimetr: getPerimetr,
+      }
+      const circle2  = {
+        radius: 20,
+         methodGetArea: getArea,
+        methodGetPerimetr: getPerimetr,
+      }
+      console.log(circle1.methodGetArea())
+      console.log(circle2.methodGetArea())
+    </script>
+</body>
+</html>
