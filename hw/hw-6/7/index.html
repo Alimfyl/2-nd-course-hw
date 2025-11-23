@@ -7,26 +7,14 @@
 </head>
 <body>
     <script>
-        function getArea() {
-            return Math.PI * this.radius ** 2;
+        const arr = [9, 8, 7, 6, 5];
+        const userNum = +prompt('Введите число');
+        if(arr.includes(userNum)){
+          alert('Угадал');
         }
-
-        function getPerimetr() {
-            return 2 * Math.PI * this.radius;
+        else{
+          alert('Не угадал')
         }
-
-      const circle1 = {
-        radius: 10,
-        methodGetArea: getArea,
-        methodGetPerimetr: getPerimetr,
-      }
-      const circle2  = {
-        radius: 20,
-         methodGetArea: getArea,
-        methodGetPerimetr: getPerimetr,
-      }
-      console.log(circle1.methodGetArea())
-      console.log(circle2.methodGetArea())
     </script>
 </body>
 </html>
