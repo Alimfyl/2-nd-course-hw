@@ -7,19 +7,10 @@
 </head>
 <body>
     <script>
-        function hi (age = prompt("Сколько Вам лет?")) {
-            
-            if ( age < 0 ) {
-                alert ("Вы ввели неправильное значение")
-            }
-            else if (age > 0 && age < 12 ) {
-                alert ("Привет, друг!")
-            }
-            else {
-                alert ("Добро пожаловать!")
-            }
+        function sqauare(arr) {
+            return arr.map(item => item ** 2);
         }
-        hi ()
+        console.log(sqauare([1, 2, 3]))
         </script>
 </body>
 </html>
