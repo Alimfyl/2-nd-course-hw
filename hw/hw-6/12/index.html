@@ -7,16 +7,11 @@
 </head>
 <body>
     <script>
-       function composition (a = prompt("Введите первое число"), b = prompt("Введите второе число")) {
-            if (  isNaN(a) || isNaN(b)) {
-                alert ("Вы ввели неправильное значение")
-            }
-            else {
-                return a * b
-            }
-        }
-        let result = composition (a = prompt("Введите первое число"), b = prompt("Введите второе число"))
-        console.log (result);
+       function getLeng(arr) {
+        return arr.map(item => item.length);
+       }
+
+        console.log (getLeng(["hi", "hello"]));
 
     </script>
 </body>
