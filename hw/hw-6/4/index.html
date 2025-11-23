@@ -7,19 +7,16 @@
 </head>
 <body>
     <script>
-        function hi (age = prompt("Сколько Вам лет?")) {
-            
-            if ( age < 0 ) {
-                alert ("Вы ввели неправильное значение")
-            }
-            else if (age > 0 && age < 12 ) {
-                alert ("Привет, друг!")
-            }
-            else {
-                alert ("Добро пожаловать!")
-            }
-        }
-        hi ()
-        </script>
+      const arr = [];
+      
+      for (let i = 0; i<3; i++){
+        const arr2 = [];
+        for (let i = 0; i<3; i++){
+            arr2.push(1);
+      }
+      arr.push(arr2);
+      }
+      console.log(arr)
+    </script>
 </body>
 </html>
