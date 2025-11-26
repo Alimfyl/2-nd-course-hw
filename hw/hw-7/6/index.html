@@ -8,11 +8,8 @@
 <body>
     <script>
          function random(num) {
-            let  arr = [];
-            for(let i = 0; i < num; i++) {
-                arr.push(Math.floor(Math.random() * num) +1);
-            }
-        return arr;
+            
+        return Array.from({length: Math.floor(num / 2) }, () => Math.floor(Math.floor(Math.random() * num)));
       }
       console.log(random(10))
     </script>
