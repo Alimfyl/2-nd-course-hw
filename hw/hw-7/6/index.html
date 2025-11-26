@@ -7,10 +7,14 @@
 </head>
 <body>
     <script>
-    const arr = [9, 8, 7, 'a', 6, 5];
-    arr.sort()
-    const filteredArr = arr.filter(item => typeof item === 'number');
-    console.log(filteredArr)
+         function random(num) {
+            let  arr = [];
+            for(let i = 0; i < num; i++) {
+                arr.push(Math.floor(Math.random() * num) +1);
+            }
+        return arr;
+      }
+      console.log(random(10))
     </script>
 </body>
 </html>
