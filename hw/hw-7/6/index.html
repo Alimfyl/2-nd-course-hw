@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         function random(num) {
+            
+        return Array.from({length: Math.floor(num / 2) }, () => Math.floor(Math.floor(Math.random() * num)));
+      }
+      console.log(random(10))
+    </script>
+</body>
+</html>
