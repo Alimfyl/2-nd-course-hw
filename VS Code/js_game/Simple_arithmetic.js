@@ -12,7 +12,7 @@ function generateExample(lvl) {
         3: ['/']
     };
 
-    const availableOps = operatorsByLevel[lvl] || operatorsByLevel[0]; 
+    const availableOps = operatorsByLevel[lvl] || operatorsByLevel[0];
     const selectedOperator = availableOps[Math.floor(Math.random() * availableOps.length)];
 
     let num1 = rn(1, 20);
@@ -26,37 +26,37 @@ function generateExample(lvl) {
     }
 
     const expression = `${num1} ${selectedOperator} ${num2}`;
-  
-    const answer = eval(expression); 
+
+    const answer = eval(expression);
 
     return { expression, answer };
 }
 
 
 function gameArithmetic() {
-    
+
     const difficultyLevel = rn(0, 3);
     const example = generateExample(difficultyLevel);
-    
-    
+
+
     let userAnswer;
     do {
-        
+
         userAnswer = prompt(`Решите пример: ${example.expression}`);
 
-        
+
         if (userAnswer === null) {
             alert('Игра отменена.');
-            return; 
+            return;
         }
 
-        
+
         if (+userAnswer !== example.answer) {
             alert('Неверно! Попробуйте еще раз.');
         }
 
-    } while (+userAnswer !== example.answer); 
-    
+    } while (+userAnswer !== example.answer);
+
     alert('Верно!');
-    
+
 }

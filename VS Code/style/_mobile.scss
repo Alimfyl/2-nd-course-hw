@@ -1,29 +1,33 @@
-@media(max-width: 377px){
-    .center{
+@media(max-width: 377px) {
+    .center {
         padding-left: 16px;
         padding-right: 16px;
     }
-    .header__star-3-box{
-    right: auto;
-}
-    .header{
+
+    .header__star-3-box {
+        right: auto;
+    }
+
+    .header {
         width: 377px;
         height: 700px;
         align-items: center;
-        
-       &__greeting{
-        font-size: 40px;
-        font-weight: 700;
-        line-height: 49px;
-        text-align: center;
-    }
-        &__invitation{
+
+        &__greeting {
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 49px;
+            text-align: center;
+        }
+
+        &__invitation {
             font-size: 16px;
             line-height: 20px;
             letter-spacing: 0px;
             text-align: center;
         }
-        &__play-button{
+
+        &__play-button {
             width: 285px;
             height: 55px;
             font-size: 16px;
@@ -34,116 +38,137 @@
             gap: 10px;
             padding: 16px 28px 16px 28px;
         }
-}
-.header__star-1{
-    width: 35px;
-    height: 35px;
-    left: 38px;
-    top: 97px;
-}
-.header__star-2{
-    width: 21px;
-    height: 21px;
-    left: 92px;
-    top: 64px;
-}
-.header__star-4{
-    width: 18px;
-    height: 18px;
-    right: 84px;
-    top: 557px;
-}
-.header__star-5{
-    width: 39px;
-    height: 41px;
-    right: 34px;
-    top: 580px;
-}
-.menu{
-    gap: 27.4px;
-    padding: 16px 24px 16px 24px;
-    width: 409px;
-    height: 51.34px;
-    &__game{
-       
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 110%;
-        letter-spacing: 4%;
-        text-align: left;
-        text-transform: uppercase;
     }
-    &__img{
-        width: 19.34px;
-        height: 19.34px;
+
+    .header__star-1 {
+        width: 35px;
+        height: 35px;
+        left: 38px;
+        top: 97px;
     }
-}
-.background{
-    padding-bottom: 9.88px;
-    width: 377px;
-}
-.background__star-1-box{
-    display: none;
-}
-.about-box{
-    display: none;
-}
-.mini-game{
-    padding-top: 48px;
-    padding-bottom: 9.88px;
-    &__text{
-        font-size: 40px;
-        font-weight: 700;
-        line-height: 49px;
+
+    .header__star-2 {
+        width: 21px;
+        height: 21px;
+        left: 92px;
+        top: 64px;
     }
-}
-.game-box_play{
-    align-items: center;
-}
-.game-card{
-    width: 343px;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    &__img{
+
+    .header__star-4 {
+        width: 18px;
+        height: 18px;
+        right: 84px;
+        top: 557px;
+    }
+
+    .header__star-5 {
+        width: 39px;
+        height: 41px;
+        right: 34px;
+        top: 580px;
+    }
+
+    .menu {
+        gap: 27.4px;
+        padding: 16px 24px 16px 24px;
+        width: 409px;
+        height: 51.34px;
+
+        &__game {
+
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 110%;
+            letter-spacing: 4%;
+            text-align: left;
+            text-transform: uppercase;
+        }
+
+        &__img {
+            width: 19.34px;
+            height: 19.34px;
+        }
+    }
+
+    .background {
+        padding-bottom: 9.88px;
+        width: 377px;
+    }
+
+    .background__star-1-box {
+        display: none;
+    }
+
+    .about-box {
+        display: none;
+    }
+
+    .mini-game {
+        padding-top: 48px;
+        padding-bottom: 9.88px;
+
+        &__text {
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 49px;
+        }
+    }
+
+    .game-box_play {
+        align-items: center;
+    }
+
+    .game-card {
         width: 343px;
-        height: 284.93px;
-    }
-    &__description{
-        width: 284.93px;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        padding: 29.04px 29.04px 32.67px 29.04px;
-    }
-    &__name{
-        font-size: 32px;
-        font-weight: 700;
-        line-height: 39px;
-    }
-    &__text{
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 20px;
-    }
-    &__link{
-        width: 100%;
-    }
-    &__play{
-        width: 100%;
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 141.69%;
-    }
-}
 
-.footer{
-    width: 410px;
-    height: 100px;
-    &__def{
-        font-size: 16px;
-        font-weight: 600;
+        &__img {
+            width: 343px;
+            height: 284.93px;
+        }
+
+        &__description {
+            width: 284.93px;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 29.04px 29.04px 32.67px 29.04px;
+        }
+
+        &__name {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 39px;
+        }
+
+        &__text {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+        }
+
+        &__link {
+            width: 100%;
+        }
+
+        &__play {
+            width: 100%;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 141.69%;
+        }
     }
-   
-}
+
+    .footer {
+        width: 410px;
+        height: 100px;
+
+        &__def {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+    }
 }

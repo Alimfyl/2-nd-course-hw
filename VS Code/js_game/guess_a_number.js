@@ -7,18 +7,18 @@ function random(min, max) {
 
 
 function game() {
-    
+
     let num = random(1, 100)
     alert("Угадайте число")
 
     let input;
     let attempts = 0;
-    
+
 
     do {
         let inputString = prompt('Введите своё число');
-        
-        
+
+
         if (inputString === null) {
             alert('Игра отменена!');
             return;
@@ -32,7 +32,7 @@ function game() {
         } else if (input !== num) {
             alert(num > input ? 'Число больше.' : 'Число меньше.');
         }
-        
+
     } while (input !== num || isNaN(input));
 
     alert(`Вы угадали!`);

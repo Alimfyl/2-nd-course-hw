@@ -1,21 +1,21 @@
 
 
 function playGame() {
-    
+
     const options = ["камень", "ножницы", "бумага"];
 
     let userInput = prompt("Введите свой выбор: камень, ножницы или бумага");
 
     if (userInput === null) {
         alert("Игра отменена.");
-        return; 
+        return;
     }
 
     const userChoice = userInput.trim().toLowerCase();
 
     if (!options.includes(userChoice)) {
         alert("Некорректный ввод. Пожалуйста, введите 'камень', 'ножницы' или 'бумага'.");
-        return; 
+        return;
     }
 
     const randomIndex = Math.floor(Math.random() * options.length);

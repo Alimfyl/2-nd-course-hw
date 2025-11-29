@@ -3,7 +3,7 @@ function startQuizGame() {
         {
             question: "Какой цвет небо?",
             options: ["1. Красный", "2. Синий", "3. Зеленый"],
-            correctAnswer: 2 
+            correctAnswer: 2
         },
         {
             question: "Сколько дней в неделе?",
@@ -17,23 +17,23 @@ function startQuizGame() {
         }
     ];
 
-    let score = 0; 
+    let score = 0;
 
     for (let i = 0; i < quiz.length; i++) {
         const currentQuestion = quiz[i];
 
         let promptText = `${currentQuestion.question}\n\n`;
         promptText += currentQuestion.options.join('\n');
-      
+
         const userAnswer = prompt(promptText);
 
         if (userAnswer !== null && userAnswer.trim() !== '') {
-          
+
             const userChoice = parseInt(userAnswer, 10);
-            
-            
+
+
             if (userChoice === currentQuestion.correctAnswer) {
-                score++; 
+                score++;
                 alert('Верно!');
             } else {
                 alert('Неверно.');
