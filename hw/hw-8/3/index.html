@@ -7,10 +7,13 @@
 </head>
 <body>
     <script>
-       let num = 321.58884;
-       console.log(Math.floor(num));
-       console.log(Math.ceil(num));
-       console.log(Math.round(num));
+      const intervalId = setInterval(() => {
+        console.log("Прошла секунда")
+      } 3000);
+      setTimeout(() => {
+        clearInterval(intervalId);
+        console.log('Время прошло')
+      }, 7000)
     </script>
 </body>
 </html>
