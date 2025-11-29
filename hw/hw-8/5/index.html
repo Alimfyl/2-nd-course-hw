@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
+
 <body>
-    <script>
-     function delayForSecond(cb) {
-    setTimeout(() => {
+  <script>
+    function delayForSecond(cb) {
+      setTimeout(() => {
         console.log('Прошла одна секунда');
-        if(cb) {  cb(); }
-    }, 1000)
-}
+        if (cb) { cb(); }
+      }, 1000)
+    }
 
-// Функция sayHi выводит в консоль приветствие для указанного имени
-function sayHi (name) {
-    console.log(`Привет, ${name}!`);
-}
+    // Функция sayHi выводит в консоль приветствие для указанного имени
+    function sayHi(name) {
+      console.log(`Привет, ${name}!`);
+    }
 
-// Код выше менять нельзя
+    // Код выше менять нельзя
 
-// Нужно изменить код ниже:
-delayForSecond(() => sayHi('Глеб'));
-    </script>
+    // Нужно изменить код ниже:
+    delayForSecond(() => sayHi('Глеб'));
+  </script>
 </body>
+
 </html>
