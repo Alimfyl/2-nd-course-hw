@@ -7,10 +7,22 @@
 </head>
 <body>
     <script>
-      function random() {
-        return Math.floor(Math.random() * 10) +1;
-      }
-      console.log(random());
+     function delayForSecond(cb) {
+    setTimeout(() => {
+        console.log('Прошла одна секунда');
+        if(cb) {  cb(); }
+    }, 1000)
+}
+
+// Функция sayHi выводит в консоль приветствие для указанного имени
+function sayHi (name) {
+    console.log(`Привет, ${name}!`);
+}
+
+// Код выше менять нельзя
+
+// Нужно изменить код ниже:
+delayForSecond(() => sayHi('Глеб'));
     </script>
 </body>
 </html>
