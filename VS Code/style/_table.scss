@@ -1,92 +1,107 @@
-@media(max-width: 1200px){
-.center {
-    padding-left: calc(50% - 786px/2);
-    padding-right: calc(50% - 786px/2);
-}
-.header__star-3-box{
-    width: 189px;
-    height: 135.39px;
-}
+@media(max-width: 1200px) {
+    .center {
+        padding-left: calc(50% - 786px/2);
+        padding-right: calc(50% - 786px/2);
+    }
 
-.header__star-3-mob{
-    display: block;
-    position: absolute;
-    top: -120px;
-    object-position: left bottom;
-}
-.header__star-3{
-    display: none;
-}
-.header__star-4 {
-    position: absolute;
-    right: 110px;
-    top: 830px;
-}
-.header__star-5 {
-    position: absolute;
-    right: 34px;
-    top: 870px;
-}
-.background__star-box {
+    .header__star-3-box {
+        width: 189px;
+        height: 135.39px;
+    }
+
+    .header__star-3-mob {
+        display: block;
+        position: absolute;
+        top: -120px;
+        object-position: left bottom;
+    }
+
+    .header__star-3 {
         display: none;
     }
-.about-box{
-    display: none;
-}
-.game-card{
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
 
-.game-box{
-    justify-content: center;
-    align-items: center;
-}
-}
-@media(max-width: 600px){
-    
-    
-   .game-card{
-    width: 343px;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    &__img{
-        width: 343px;
-        height: 284.93px;
+    .header__star-4 {
+        position: absolute;
+        right: 110px;
+        top: 830px;
     }
-    &__description{
-        width: 284.93px;
+
+    .header__star-5 {
+        position: absolute;
+        right: 34px;
+        top: 870px;
+    }
+
+    .background__star-box {
+        display: none;
+    }
+
+    .about-box {
+        display: none;
+    }
+
+    .game-card {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        padding: 29.04px 29.04px 32.67px 29.04px;
     }
-    &__name{
-        font-size: 32px;
-        font-weight: 700;
-        line-height: 39px;
-    }
-    &__text{
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 20px;
-    }
-    &__link{
-        width: 100%;
-    }
-    &__play{
-        width: 100%;
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 141.69%;
+
+    .game-box {
+        justify-content: center;
+        align-items: center;
     }
 }
-@media (max-width: 416px){
-    .header__greeting {
-        font-size: 64px;
+
+@media(max-width: 600px) {
+
+
+    .game-card {
+        width: 343px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        &__img {
+            width: 343px;
+            height: 284.93px;
+        }
+
+        &__description {
+            width: 284.93px;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 29.04px 29.04px 32.67px 29.04px;
+        }
+
+        &__name {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 39px;
+        }
+
+        &__text {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+        }
+
+        &__link {
+            width: 100%;
+        }
+
+        &__play {
+            width: 100%;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 141.69%;
+        }
     }
-}
+
+    @media (max-width: 416px) {
+        .header__greeting {
+            font-size: 64px;
+        }
+    }
 
 }
