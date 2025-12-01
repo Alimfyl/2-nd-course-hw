@@ -8,15 +8,23 @@
 </head>
 
 <body>
-
+    <h1 id="heading">Lorem, ipsum dolor.</h1>
+    <button id="hideText">Скрыть / Показать</button>
     <script>
-        const people = [
-            { name: 'Глеб', age: 29 },
-            { name: 'Анна', age: 17 },
-            { name: 'Олег', age: 7 },
-            { name: 'Оксана', age: 47 }
-        ];
-        console.log(people.sort((a, b) => a.age - b.age));
+        const titleElement = document.querySelector('#heading');
+const buttonElement = document.querySelector('#hideText');
+
+buttonElement.addEventListener('click', function() {
+   
+    if (titleElement.style.display !== 'none') {
+        titleElement.style.display = 'none';
+       
+    } else {
+       
+        titleElement.style.display = ''; 
+       
+    }
+});
     </script>
 </body>
 
