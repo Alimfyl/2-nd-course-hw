@@ -8,8 +8,16 @@
 </head>
 
 <body>
+    <h1 id="heading">Lorem ipsum dolor sit.</h1>
+    <button id="headingChange">Изменить текст</button>
     <script>
+        const titleElement = document.querySelector('#heading');
+const buttonElement = document.querySelector('#headingChange');
+
+buttonElement.addEventListener('click', function() {
+    titleElement.textContent = 'Привет, мир!';
     
+});
     </script>
 </body>
 
