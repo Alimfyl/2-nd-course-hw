@@ -8,17 +8,19 @@
 </head>
 
 <body>
-    <h1 id="conteiner"></h1>
+    
     <button id="creatElement"> Создать параграф</button>
+    <h1 id="conteiner"></h1>
     <script>
-        const conteiner = document.getElementById('#conteiner')
-        const newElelement = document.getElementById('#creatElement')
+        const conteiner = document.getElementById('conteiner')
+        const newElelement = document.getElementById('creatElement')
         newElelement.addEventListener('click', function () {
             const newParagraph = document.createElement('p');
             newParagraph.textContent = "Новый абзац"
-            conteinerElement.appendChild(newParagraph);
+            conteiner.appendChild(newParagraph);
         })
     </script>
+    
 </body>
 
 </html>
