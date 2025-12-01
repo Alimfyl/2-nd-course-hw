@@ -8,8 +8,25 @@
 </head>
 
 <body>
+  <p class="description_first">Lorem ipsum dolor sit amet consectetur.</p>
+  <p class="description_add">Lorem ipsum dolor sit amet consectetur.</p>
+  <p class="description">Lorem ipsum dolor sit amet consectetur.</p>
+  <p class="description">Lorem ipsum dolor sit amet consectetur.</p>
+  <p class="description">Lorem ipsum dolor sit amet consectetur.</p>
+  <p class="description_special">Lorem ipsum dolor sit amet consectetur.</p>
+  <p class="description">Lorem ipsum dolor sit amet consectetur.</p>
+  <p class="description_pre_end">Lorem ipsum dolor sit amet consectetur.</p>
+  <p class="description_end">Lorem ipsum dolor sit amet consectetur.</p>
   <script>
-    
+    const descriptionElements = document.querySelectorAll('.description');
+
+    const newText = 'Новый текст';
+
+
+    descriptionElements.forEach(element => {
+
+      element.textContent = newText;
+    });
   </script>
 </body>
 
