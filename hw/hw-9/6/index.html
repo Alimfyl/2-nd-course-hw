@@ -8,9 +8,16 @@
 </head>
 
 <body>
-
+    <h1 id="conteiner"></h1>
+    <button id="creatElement"> Создать параграф</button>
     <script>
-       
+        const conteiner = document.getElementById('#conteiner')
+       const newElelement = document.getElementById('#creatElement')
+       button.addEventListener('click', function() {
+        const newParagraph = document.createElement('p');
+        newParagraph.textContent = "Новый абзац"
+        conteinerElement.appendChild(newParagraph);
+       })
     </script>
 </body>
 
