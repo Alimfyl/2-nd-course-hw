@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p class="description_first">Lorem ipsum dolor sit amet consectetur.</p>
+    <p class="description_add">Lorem ipsum dolor sit amet consectetur.</p>
+    <p class="description">Lorem ipsum dolor sit amet consectetur.</p>
+    <p class="description">Lorem ipsum dolor sit amet consectetur.</p>
+    <p class="description">Lorem ipsum dolor sit amet consectetur.</p>
+    <p class="description_special">Lorem ipsum dolor sit amet consectetur.</p>
+    <p class="description">Lorem ipsum dolor sit amet consectetur.</p>
+    <p class="description_pre_end">Lorem ipsum dolor sit amet consectetur.</p>
+    <p class="description_end">Lorem ipsum dolor sit amet consectetur.</p>
+    <button id="deleteElement"> Удалить параграф</button>
+    <script>
+        
+        const removeElelement = document.querySelector('#deleteElement')
+        removeElelement.addEventListener('click', function () {
+            const description = document.querySelector('.description');
+            description.remove()
+        })
+   
+    </script>
+</body>
+
+</html>
