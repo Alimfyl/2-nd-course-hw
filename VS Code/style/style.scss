@@ -121,20 +121,42 @@
     cursor: pointer;
 }
 
-.menu {
+.menu-box {
+    width: 100%;
     box-sizing: border-box;
     border: 1px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(50px);
-    background: rgba(188, 236, 48, 1);
+    background: rgb(188, 236, 48);
     max-height: 90px;
-    display: flex;
+    overflow: hidden;
+}
+
+.menu-content-wrapper {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee-scroll 20s linear infinite;
+}
+
+@keyframes marquee-scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+
+        transform: translateX(-50%);
+    }
+}
+
+.menu {
+
+    display: inline-flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     gap: 51px;
-    padding: 27px 49px 27px 49px;
-    overflow: hidden;
-    white-space: nowrap;
+    padding: 27px 49px;
+
 }
 
 .menu__game {
@@ -146,6 +168,11 @@
     letter-spacing: 4%;
     text-align: left;
     text-transform: uppercase;
+}
+
+.menu__img {
+    height: 20px;
+    vertical-align: middle;
 }
 
 .background {
