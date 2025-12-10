@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="style/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <script src="js_game/guess_a_number.js"></script>
-    <script src="js_game/simple_arithmetic.js"></script>
-    <script src="js_game/Reverse_text.js"></script>
-    <script src="js_game/Quiz.js"></script>
-    ////
-    <script src="js_game/game_rock,paper,scissors.js"></script>
+    <script src="js_game/guess_a_number.js" defer></script>
+    <script src="js_game/simple_arithmetic.js" defer></script>
+    <script src="js_game/Reverse_text.js" defer></script>
+    <script src="js_game/Quiz.js" defer></script>
+    <script src="js_game/changeColor.js" defer></script>
+    <script src="js_game/game_rock,paper,scissors.js" defer></script>
 </head>
 
-<body>
+<body id="body">
     <header class="header center">
         <div class="header__star-box">
             <img src="img/star/Star2.svg" class="header__star-1" alt="">
@@ -38,19 +38,38 @@
             </button>
         </form>
     </header>
-    <div class="menu">
-        <p class="menu__game">ВИКТОРИНА</p>
-        <img class="menu__img" src="img/Star.svg" alt="Разделительная звёздочка">
-        <p class="menu__game">УГАДАЙ ЧИСЛО</p>
-        <img class="menu__img" src="img/Star.svg" alt="Разделительная звёздочка">
-        <p class="menu__game">ПЕРЕВЕРНИ ТЕКСТ</p>
-        <img class="menu__img" src="img/Star.svg" alt="Разделительная звёздочка">
-        <p class="menu__game">ПРОСТАЯ АРИФМЕТИКА</p>
-        <img class="menu__img" src="img/Star.svg" alt="Разделительная звёздочка">
-        <p class="menu__game">КАМЕНЬ, НОЖНИЦЫ, БУМАГА</p>
-        <img class="menu__img" src="img/Star.svg" alt="Разделительная звёздочка">
-        <p class="menu__game">ГЕНЕРАТОР СЛУЧАЙНЫХ ЦВЕТОВ</p>
-        <img class="menu__img" src="img/Star.svg" alt="Разделительная звёздочка">
+    <div class="menu-box">
+        <div class="menu-content-wrapper">
+            <div class="menu">
+                <p class="menu__game">ВИКТОРИНА</p>
+                <img class="menu__img" src="img/Star.svg" alt="Разделительная звёздочка">
+                <p class="menu__game">УГАДАЙ ЧИСЛО</p>
+                <img class="menu__img" src="img/Star.svg" alt="Разделительная звёздочка">
+                <p class="menu__game">ПЕРЕВЕРНИ ТЕКСТ</p>
+                <img class="menu__img" src="img/Star.svg" alt="Разделительная звёздочка">
+                <p class="menu__game">ПРОСТАЯ АРИФМЕТИКА</p>
+                <img class="menu__img" src="img/Star.svg" alt="Разделительная звёздочка">
+                <p class="menu__game">КАМЕНЬ, НОЖНИЦЫ, БУМАГА</p>
+                <img class="menu__img" src="img/Star.svg" alt="Разделительная звёздочка">
+                <p class="menu__game">ГЕНЕРАТОР СЛУЧАЙНЫХ ЦВЕТОВ</p>
+                <img class="menu__img" src="img/Star.svg" alt="Разделительная звёздочка">
+            </div>
+
+            <div class="menu">
+                <p class="menu__game">ВИКТОРИНА</p>
+                <img class="menu__img" src="img/Star.svg" alt="Разделительная звёздочка">
+                <p class="menu__game">УГАДАЙ ЧИСЛО</p>
+                <img class="menu__img" src="img/Star.svg" alt="Разделительная звёздочка">
+                <p class="menu__game">ПЕРЕВЕРНИ ТЕКСТ</p>
+                <img class="menu__img" src="img/Star.svg" alt="Разделительная звёздочка">
+                <p class="menu__game">ПРОСТАЯ АРИФМЕТИКА</p>
+                <img class="menu__img" src="img/Star.svg" alt="Разделительная звёздочка">
+                <p class="menu__game">КАМЕНЬ, НОЖНИЦЫ, БУМАГА</p>
+                <img class="menu__img" src="img/Star.svg" alt="Разделительная звёздочка">
+                <p class="menu__game">ГЕНЕРАТОР СЛУЧАЙНЫХ ЦВЕТОВ</p>
+                <img class="menu__img" src="img/Star.svg" alt="Разделительная звёздочка">
+            </div>
+        </div>
     </div>
     <div class="background center">
         <div class="background__star-box">
@@ -137,9 +156,9 @@
                     <div class="game-card__description">
                         <h2 class="game-card__name">Угадай число</h2>
                         <p class="game-card__text">Попробуй угадать случайное <br> число от 1 до 100.</p>
-                        <form action="#" class="game-card__link">
-                            <button onclick="game ()" class="game-card__play">Играть!</button>
-                        </form>
+
+                        <button onclick="game ()" class="game-card__play">Играть!</button>
+
                     </div>
                 </article>
                 <article class="game-card" id="game-2">
@@ -147,9 +166,9 @@
                     <div class="game-card__description">
                         <h2 class="game-card__name">Простая арифметика</h2>
                         <p class="game-card__text">Попробуй решить простые арифметические задачи.</p>
-                        <form action="#" class="game-card__link">
-                            <button onclick="gameArithmetic()" class="game-card__play">Играть!</button>
-                        </form>
+
+                        <button onclick="gameArithmetic()" class="game-card__play">Играть!</button>
+
                     </div>
                 </article>
                 <article class="game-card game-card-revers" id="game-3">
@@ -157,9 +176,9 @@
                     <div class="game-card__description">
                         <h2 class="game-card__name">Переверни текст</h2>
                         <p class="game-card__text">Попробуй ввести текст, который будет перевернут.</p>
-                        <form action="#" class="game-card__link">
-                            <button onclick="gameRev()" class="game-card__play">Играть!</button>
-                        </form>
+
+                        <button onclick="gameRev()" class="game-card__play">Играть!</button>
+
                     </div>
                 </article>
                 <article class="game-card" id="game-4">
@@ -167,9 +186,9 @@
                     <div class="game-card__description">
                         <h2 class="game-card__name">Камень,<br>ножницы,<br>бумага</h2>
                         <p class="game-card__text">Сыграй в популярную игру<br>против компьютера.</p>
-                        <form action="#" class="game-card__link">
-                            <button onclick="playGame()" class="game-card__play">Играть!</button>
-                        </form>
+
+                        <button onclick="playGame()" class="game-card__play">Играть!</button>
+
                     </div>
                 </article>
                 <article class="game-card game-card-revers" id="game-5">
@@ -177,20 +196,17 @@
                     <div class="game-card__description">
                         <h2 class="game-card__name">Простая викторина</h2>
                         <p class="game-card__text">Отвечай на вопросы викторины<br>с вариантами ответов.</p>
-                        <form action="#" class="game-card__link">
-                            <button onclick="startQuizGame();" class="game-card__play">Играть!</button>
-                        </form>
+
+                        <button onclick="startQuizGame();" class="game-card__play">Играть!</button>
+
                     </div>
                 </article>
                 <article class="game-card" id="game-6">
                     <img class="game-card__img" src="img/cart6.png" alt="Генератор случайных цветов">
                     <div class="game-card__description">
                         <h2 class="game-card__name">Генератор случайных<br>цветов</h2>
-                        <p class="game-card__text">Игра, в которой при клике на кнопку фон страницы меняется на
-                            случайный.</p>
-                        <form action="#" class="game-card__link">
-                            <button class="game-card__play">Играть!</button>
-                        </form>
+                        <p class="game-card__text">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
+                        <button  id="changeColorButton" class="game-card__play">Играть!</button>
                     </div>
                 </article>
             </div>
